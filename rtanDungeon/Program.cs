@@ -127,7 +127,7 @@ namespace rtanDungeon {
                             Console.WriteLine("잘못된 입력입니다.");
                             continue;
                         } else {
-                            inventory.Equip(input);
+                            player.StatusChange(inventory.Equip(input));
                             itemCheck = false;
                             DisplayEquipment();
                             break;
@@ -175,21 +175,32 @@ namespace rtanDungeon {
             Gold = gold;
         }
 
-        public void StatusUp(Item[] items) {
-            foreach (var item in items) {
-                if (item.equip) {
-                    if (item.ability == "공격력") {
-                        plusAtk += item.stat;
-                        Atk += plusAtk;
-                    } else if (item.ability == "방어력") {
-                        plusDef += item.stat;
-                        Def += plusAtk;
-                    } else if (item.ability == "체력") {
-                        plusHp += item.stat;
-                        Hp += plusAtk;
-                    } else {
-                        return;
-                    }
+        public void StatusChange(Item item) {
+            if (item.equip) {
+                if (item.ability == "공격력") {
+                    plusAtk += item.stat;
+                    Atk += item.stat;
+                } else if (item.ability == "방어력") {
+                    plusDef += item.stat;
+                    Def += item.stat;
+                } else if (item.ability == "체력") {
+                    plusHp += item.stat;
+                    Hp += item.stat;
+                } else {
+                    return;
+                }
+            } else {
+                if (item.ability == "공격력") {
+                    plusAtk -= item.stat;
+                    Atk -= item.stat;
+                } else if (item.ability == "방어력") {
+                    plusDef -= item.stat;
+                    Def -= item.stat;
+                } else if (item.ability == "체력") {
+                    plusHp -= item.stat;
+                    Hp -= item.stat;
+                } else {
+                    return;
                 }
             }
         }
@@ -247,13 +258,14 @@ namespace rtanDungeon {
             }
         }
 
-        public void Equip(int number) {
+        public Item Equip(int number) {
             int num = number - 1;
             if (items[num].equip) {
                 items[num].equip = false;
             } else {
                 items[num].equip = true;
             }
+            return items[num];
         }
 
         public void GetItem(Item item) {
