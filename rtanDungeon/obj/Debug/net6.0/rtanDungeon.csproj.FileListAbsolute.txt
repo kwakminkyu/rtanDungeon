@@ -1,0 +1,14 @@
+E:\unityGit\rtanDungeon\rtanDungeon\bin\Debug\net6.0\rtanDungeon.exe
+E:\unityGit\rtanDungeon\rtanDungeon\bin\Debug\net6.0\rtanDungeon.deps.json
+E:\unityGit\rtanDungeon\rtanDungeon\bin\Debug\net6.0\rtanDungeon.runtimeconfig.json
+E:\unityGit\rtanDungeon\rtanDungeon\bin\Debug\net6.0\rtanDungeon.dll
+E:\unityGit\rtanDungeon\rtanDungeon\bin\Debug\net6.0\rtanDungeon.pdb
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.GeneratedMSBuildEditorConfig.editorconfig
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.AssemblyInfoInputs.cache
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.AssemblyInfo.cs
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.csproj.CoreCompileInputs.cache
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.dll
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\refint\rtanDungeon.dll
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.pdb
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\rtanDungeon.genruntimeconfig.cache
+E:\unityGit\rtanDungeon\rtanDungeon\obj\Debug\net6.0\ref\rtanDungeon.dll
